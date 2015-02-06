@@ -38,7 +38,7 @@ body {
   }
 }
 .container-narrow > hr {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 /* Main marketing message and sign up button */
@@ -48,7 +48,24 @@ body {
 }
 .jumbotron .btn {
   font-size: 21px;
-  padding: 14px 24px;
+  padding: 5px
+}
+.chat {
+  display: flex;
+  text-align: left;
+}
+.chat img{
+  width: 40px;
+  height: 40px
+}
+.avatar {
+  flex-direction: row;
+  width: 40px;
+  height: 40px
+}
+.message {
+  flex-direction: row;
+  margin-left: 50px;
 }
 
 /* Supporting marketing content */

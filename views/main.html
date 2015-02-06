@@ -1,8 +1,26 @@
-<div class="header">
-  <h3 class="text-muted">chatty</h3>
-</div>
+<div ng-controller='MessageCtrl'>
+	<div class="header">
+	  <h3 class="text-muted">chatty</h3>
+	</div>
 
-<h4>Latest Chats:</h4>
-<div class="jumbotron">
+		<h4>Latest Chats:</h4>
+			<form class="input" ng-enter="addMessage()">
+				<input type="text" ng-model="username" placeholder="Username">
+				<input type="text" ng-model="inputMessage" placeholder="Enter Message">
+			</form>
+				
+
+		<div class="jumbotron" ng-repeat="message in messages" >
+			<div class="chat">
+				<div class="avatar">
+					<img src={{message.avatar}}>
+				</div>
+				{{message.username}}
+				<div class="message">
+				{{message.message}}<br />
+				{{message.time}}
+				</div>
+			</div>
+		</div>
 
 </div>
